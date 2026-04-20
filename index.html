@@ -3,233 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio pessoal</title>
+    <title>Giselle Pegado — Portfólio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%237c3aed'/><stop offset='100%' stop-color='%23db2777'/></linearGradient></defs><rect width='32' height='32' rx='7' fill='url(%23g)'/><polygon points='16,4 18.4,13.6 28,16 18.4,18.4 16,28 13.6,18.4 4,16 13.6,13.6' fill='white'/></svg>">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!-- Aurora de fundo animada -->
+    <div class="aurora-canvas" aria-hidden="true">
+      <div class="aurora-orb orb-1"></div>
+      <div class="aurora-orb orb-2"></div>
+      <div class="aurora-orb orb-3"></div>
+      <div class="aurora-orb orb-4"></div>
+    </div>
+
+    <!-- HEADER -->
     <header>
       <nav class="cabecalho">
-        <div>
-          <h1 class="nome">Giselle Pegado</h1>
-          <p class="curso">Análise e Desenvolvimento de Sistemas</p>
+        <div class="nav-brand">
+          <div class="nav-dot"></div>
+          <div>
+            <div class="nome">Giselle Pegado</div>
+            <div class="curso">Análise e Desenvolvimento de Sistemas</div>
+          </div>
         </div>
-
         <ul class="menu">
-          <li><a href="#inicio" class="menu-link active">Início</a></li>
-          <li><a href="#sobre" class="menu-link">Sobre Mim</a></li>
-          <li><a href="#formacao" class="menu-link">Formação</a></li>
+          <li><a href="#inicio"    class="menu-link active">Início</a></li>
+          <li><a href="#sobre"     class="menu-link">Sobre</a></li>
+          <li><a href="#formacao"  class="menu-link">Formação</a></li>
           <li><a href="#portfolio" class="menu-link">Portfólio</a></li>
-          <li><a href="#contato" class="menu-link">Contato</a></li>
+          <li><a href="#contato"   class="menu-link">Contato</a></li>
         </ul>
+        <a href="https://github.com/GisellePegado" target="_blank" rel="noopener noreferrer" class="nav-github">GitHub ↗</a>
+        <!-- Botão hambúrguer (visível apenas em mobile) -->
+        <button class="nav-hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
       </nav>
+
+      <!-- Menu mobile dropdown -->
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul class="mobile-menu-list">
+          <li><a href="#inicio"    class="mobile-menu-link">Início</a></li>
+          <li><a href="#sobre"     class="mobile-menu-link">Sobre</a></li>
+          <li><a href="#formacao"  class="mobile-menu-link">Formação</a></li>
+          <li><a href="#portfolio" class="mobile-menu-link">Portfólio</a></li>
+          <li><a href="#contato"   class="mobile-menu-link">Contato</a></li>
+          <li>
+            <a href="https://github.com/GisellePegado" target="_blank" rel="noopener noreferrer" class="mobile-menu-github">
+              GitHub ↗
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-      <!-- SEÇÃO 1: INÍCIO -->
-      <section id="inicio" class="intro-section">
-        <div class="apresentacao">
-          <h1 class="apresentacao-title">
-            Olá! Eu sou <span class="highlight">Giselle Pegado</span>
-          </h1>
-          <h2 class="apresentacao-subtitle">
-            Estudante de Análise e Desenvolvimento de Sistemas transformando
-            ideias em experiências digitais
-          </h2>
-          <p class="apresentacao-description">
-            Apaixonada por desenvolvimento web e design criativo, estou
-            construindo uma base sólida em tecnologias modernas. Cada projeto é
-            uma oportunidade de aprender, crescer e criar soluções que fazem a
-            diferença na vida das pessoas.
-          </p>
 
-          <div class="apresentacao-dados">
-            <div class="dado-item">
-              <span class="dado-number">2024</span>
-              <span class="dado-label">Início da Jornada</span>
+      <!-- ===== SEÇÃO 1: INÍCIO ===== -->
+      <section id="inicio">
+        <div class="hero">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-dot"></span>
+            Portfólio · ADS · Uninter
+          </div>
+          <h1 class="hero-name">Giselle Pegado</h1>
+          <p class="hero-sub">
+            Estudante de Análise e Desenvolvimento de Sistemas apaixonada por
+            desenvolvimento web, design criativo e soluções que impactam vidas.
+          </p>
+          <div class="hero-skills">
+            <span class="skill-pill">HTML · CSS · JS</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">PyGame</span>
+            <span class="skill-pill">Kodular</span>
+            <span class="skill-pill">DevOps</span>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num">2024</span>
+              <span class="hero-stat-label">Início</span>
             </div>
-            <div class="dado-item">
-              <span class="dado-number">10+</span>
-              <span class="dado-label">Projetos</span>
+            <div class="hero-stat">
+              <span class="hero-stat-num">10+</span>
+              <span class="hero-stat-label">Projetos</span>
             </div>
-            <div class="dado-item">
-              <span class="dado-number">8+</span>
-              <span class="dado-label">Tecnologias</span>
+            <div class="hero-stat">
+              <span class="hero-stat-num">63%</span>
+              <span class="hero-stat-label">Curso</span>
             </div>
-            <div class="dado-item">
-              <span class="dado-number">63%</span>
-              <span class="dado-label">do Curso Concluído</span>
+            <div class="hero-stat">
+              <span class="hero-stat-num">100%</span>
+              <span class="hero-stat-label">Frequência</span>
             </div>
           </div>
-
-          <div class="apresentacao-actions">
-            <a href="#sobre" class="apresentacao-button"
-              >Conheça mais sobre mim ✨</a
-            >
-            <a href="#portfolio" class="apresentacao-button secundario-button">
-              <span>Ver Meus Projetos 🚀</span>
-            </a>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn-primary">Ver projetos →</a>
+            <a href="#sobre" class="btn-outline">Sobre mim</a>
           </div>
         </div>
       </section>
 
-      <!-- SEÇÃO 2: SOBRE MIM -->
-      <section id="sobre" class="about-section">
+      <!-- ===== SEÇÃO 2: SOBRE MIM ===== -->
+      <section id="sobre">
         <div class="container">
           <h2 class="section-title">Sobre Mim</h2>
+          <p class="section-subtitle">Quem está por trás dos projetos</p>
+
           <div class="sobre-mim">
             <div class="sobre-mim-text">
-              <!-- Quem sou eu -->
-              <div class="sobre-mim-box">
-                <h3 class="linha-title">Quem sou eu</h3>
-                <p>
-                  Olá! Sou Giselle Pegado, estudante de Análise e
-                  Desenvolvimento de Sistemas apaixonada por tecnologia e
-                  inovação. Estou sempre em busca de novos conhecimentos e
-                  desafios na área de desenvolvimento.
-                </p>
 
-                <p>
-                  Ao longo do curso já trabalhei com desenvolvimento web, design
-                  de interfaces no Figma, programação orientada a objetos em
-                  Java, scripts Python, banco de dados relacional e até
-                  desenvolvimento de jogos 2D com PyGame. Cada disciplina
-                  rendeu um projeto prático real.
-                </p>
-
-                <p>
-                  Acredito que a tecnologia pode transformar vidas e negócios, e
-                  meu objetivo é fazer parte dessa transformação digital — como
-                  demonstra o projeto AgendaSUS, voltado para melhorar a gestão
-                  de pacientes nas Unidades Básicas de Saúde.
-                </p>
+              <div class="dark-card">
+                <h3 class="card-title">Quem sou eu</h3>
+                <p>Olá! Sou Giselle Pegado, estudante de Análise e Desenvolvimento de Sistemas apaixonada por tecnologia e inovação. Estou sempre em busca de novos conhecimentos e desafios na área de desenvolvimento.</p>
+                <p>Ao longo do curso já trabalhei com desenvolvimento web, design de interfaces no Figma, programação orientada a objetos em Java, scripts Python, banco de dados relacional e até desenvolvimento de jogos 2D com PyGame. Cada disciplina rendeu um projeto prático real.</p>
+                <p>Acredito que a tecnologia pode transformar vidas e negócios — como demonstra o projeto AgendaSUS, voltado para melhorar a gestão de pacientes nas Unidades Básicas de Saúde.</p>
               </div>
 
-              <!-- Habilidades Técnicas -->
-              <div class="sobre-mim-box">
-                <h3 class="linha-title">Habilidades Técnicas</h3>
-                <div class="hobbies-grid">
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">🌐</div>
+              <div class="dark-card">
+                <h3 class="card-title">Habilidades Técnicas</h3>
+                <div class="skills-grid">
+                  <div class="skill-card">
+                    <span class="skill-icon">🌐</span>
                     <h4>Web</h4>
-                    <p>HTML, CSS, JavaScript — sites e portfólios responsivos.</p>
+                    <p>HTML, CSS, JavaScript — sites responsivos.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">🐍</div>
+                  <div class="skill-card">
+                    <span class="skill-icon">🐍</span>
                     <h4>Python</h4>
-                    <p>Programas console, PyGame e sistemas de estoque.</p>
+                    <p>Sistemas console, PyGame e controle de estoque.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">☕</div>
+                  <div class="skill-card">
+                    <span class="skill-icon">☕</span>
                     <h4>Java</h4>
                     <p>Programação Orientada a Objetos na prática.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">🗄️</div>
+                  <div class="skill-card">
+                    <span class="skill-icon">🗄️</span>
                     <h4>Banco de Dados</h4>
                     <p>Modelagem MER e consultas SQL em MySQL.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">🎨</div>
+                  <div class="skill-card">
+                    <span class="skill-icon">🎨</span>
                     <h4>UI/UX</h4>
-                    <p>Prototipação de interfaces no Figma e Kodular.</p>
+                    <p>Prototipação de interfaces com Figma e Kodular.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">⚙️</div>
-                    <h4>DevOps / Nuvem</h4>
+                  <div class="skill-card">
+                    <span class="skill-icon">⚙️</span>
+                    <h4>DevOps</h4>
                     <p>Conceitos de CI/CD, Docker e computação em nuvem.</p>
                   </div>
                 </div>
               </div>
 
-              <!-- Hobbies -->
-              <div class="sobre-mim-box">
-                <h3 class="linha-title">Meus Hobbies</h3>
+              <div class="dark-card">
+                <h3 class="card-title">Hobbies</h3>
                 <div class="hobbies-grid">
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">📚</div>
+                  <div class="hobby-card">
+                    <span class="hobby-icon">📚</span>
                     <h4>Leitura</h4>
-                    <p>
-                      Adoro ler livros sobre tecnologia, desenvolvimento pessoal
-                      e romances.
-                    </p>
+                    <p>Tecnologia, desenvolvimento pessoal e romances.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">💻</div>
+                  <div class="hobby-card">
+                    <span class="hobby-icon">💻</span>
                     <h4>Programação</h4>
-                    <p>
-                      Gosto de praticar código e aprender novas linguagens de
-                      programação.
-                    </p>
+                    <p>Praticar código e aprender novas linguagens.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">🎵</div>
+                  <div class="hobby-card">
+                    <span class="hobby-icon">🎵</span>
                     <h4>Música</h4>
-                    <p>
-                      A música é minha companheira durante os estudos e momentos
-                      de relaxamento.
-                    </p>
+                    <p>Companheira nos estudos e momentos de descanso.</p>
                   </div>
-
-                  <div class="hobbies-item">
-                    <div class="hobbies-icon">🌱</div>
+                  <div class="hobby-card">
+                    <span class="hobby-icon">🌱</span>
                     <h4>Aprendizado</h4>
-                    <p>
-                      Sempre buscando novos cursos online e oportunidades de
-                      crescimento.
-                    </p>
+                    <p>Sempre buscando cursos e novos desafios.</p>
                   </div>
                 </div>
               </div>
+
             </div>
 
-            <!-- Sidebar com perfil -->
             <div class="perfil">
-              <div class="perfil-box">
-                <div class="perfil-foto">
-                  <div class="foto-placeholder">
-                    <img src="imagemgi.jpg" alt="Foto de perfil" />
-                  </div>
+              <div class="perfil-card">
+                <div class="foto-wrap">
+                  <img src="imagemgi.jpg" alt="Foto de perfil de Giselle Pegado" />
                 </div>
-                <h3>Giselle Pegado</h3>
-                <p class="perfil-subtitle">Desenvolvedora em Formação</p>
-
+                <div class="perfil-nome">Giselle Pegado</div>
+                <div class="perfil-role">Desenvolvedora em Formação</div>
                 <div class="perfil-info">
-                  <div class="info-item">
-                    <span class="info-label">Localização:</span>
-                    <span class="info-value">Natal, RN</span>
+                  <div class="info-row">
+                    <span class="info-label">Localização</span>
+                    <span class="info-val">Natal, RN</span>
                   </div>
-
-                  <div class="info-item">
-                    <span class="info-label">Curso:</span>
-                    <span class="info-value">TADS</span>
+                  <div class="info-row">
+                    <span class="info-label">Curso</span>
+                    <span class="info-val">TADS</span>
                   </div>
-
-                  <div class="info-item">
-                    <span class="info-label">Foco:</span>
-                    <span class="info-value">Desenvolvimento Web</span>
+                  <div class="info-row">
+                    <span class="info-label">Foco</span>
+                    <span class="info-val">Desenvolvimento Web</span>
                   </div>
-
-                  <div class="info-item">
-                    <span class="info-label">Progresso:</span>
-                    <span class="info-value">63% concluído</span>
+                  <div class="info-row">
+                    <span class="info-label">Progresso</span>
+                    <span class="info-val">63% concluído</span>
                   </div>
-
-                  <div class="info-item">
-                    <span class="info-label">GitHub:</span>
-                    <span class="info-value">
-                      <a href="https://github.com/GisellePegado" target="_blank" rel="noopener noreferrer" style="color:#6a4c93;">GisellePegado</a>
-                    </span>
+                  <div class="info-row">
+                    <span class="info-label">GitHub</span>
+                    <span class="info-val"><a href="https://github.com/GisellePegado" target="_blank" rel="noopener noreferrer">GisellePegado ↗</a></span>
                   </div>
                 </div>
-
-                <div class="caracteristicas">
+                <div class="etiquetas-wrap">
                   <h4>Características</h4>
                   <div class="etiquetas">
                     <span class="etiqueta">Dedicada</span>
@@ -244,562 +233,363 @@
         </div>
       </section>
 
-      <!-- SEÇÃO 3: FORMAÇÃO -->
-      <section id="formacao" class="education-section">
+      <!-- ===== SEÇÃO 3: FORMAÇÃO ===== -->
+      <section id="formacao">
         <div class="container">
-          <h2 class="section-title">Formação Educacional</h2>
+          <h2 class="section-title">Formação</h2>
+          <p class="section-subtitle">Trajetória acadêmica e disciplinas cursadas</p>
 
-          <div class="educacao">
-            <!-- Formação Acadêmica -->
-            <div class="educacao-box">
-              <h3 class="linha-title">📚 Formação Acadêmica</h3>
-              <div class="educacao-item">
-                <div class="educacao-header">
-                  <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
-                  <span class="etiqueta">2024 - 2027</span>
+          <div class="formacao-grid">
+
+            <div class="dark-card">
+              <h3 class="card-title">📚 Formação Acadêmica</h3>
+              <div class="academica-grid">
+                <div class="edu-item">
+                  <div class="edu-header">
+                    <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
+                    <span class="edu-year">2024–2027</span>
+                  </div>
+                  <p class="edu-inst">Uninter</p>
+                  <p class="edu-desc">63% concluído — 840h das 1330h totais com 100% de frequência em todas as disciplinas.</p>
                 </div>
-                <p class="educacao-institution">Uninter</p>
-                <p class="educacao-description">
-                  Curso focado em desenvolvimento de software, análise de
-                  sistemas, programação e tecnologias modernas para o mercado de
-                  trabalho. 63% concluído — 840h das 1330h totais cursadas com
-                  100% de frequência em todas as disciplinas.
-                </p>
-              </div>
-              <div class="educacao-item">
-                <div class="educacao-header">
-                  <h4>Ensino Médio Completo</h4>
-                  <span class="etiqueta">2003 - 2005</span>
+                <div class="edu-item">
+                  <div class="edu-header">
+                    <h4>Ensino Médio Completo</h4>
+                    <span class="edu-year">2003–2005</span>
+                  </div>
+                  <p class="edu-inst">E.E. Winston Churchill</p>
+                  <p class="edu-desc">Formação básica e preparação para o ensino superior.</p>
                 </div>
-                <p class="educacao-institution">
-                  Escola Estadual Winston Churchill
-                </p>
-                <p class="educacao-description">
-                  Formação básica e preparação para o ensino superior.
-                </p>
               </div>
             </div>
 
-            <!-- Container para Cursos e Idiomas lado a lado -->
-            <div class="cursos-idiomas-container">
-              <!-- Disciplinas por Área -->
-              <div class="educacao-box">
-                <h3 class="linha-title">🏆 Disciplinas por Área</h3>
+            <div class="disciplinas-idiomas">
+              <div class="dark-card">
+                <h3 class="card-title">🏆 Disciplinas por Área</h3>
 
-                <!-- Grupo: Desenvolvimento -->
-                <p style="color:#6a4c93; font-weight:700; margin: 0.5rem 0 1rem; font-size:0.95rem; letter-spacing:0.03em;">🌐 Desenvolvimento</p>
-                <div class="cursos-grid" style="margin-bottom:2rem;">
-                  <div class="curso-item">
-                    <h4>Fundamentos da Programação Web</h4>
-                    <p>HTML, CSS e JavaScript na prática</p>
-                    <span class="curso-status concluido">Nota 8.8 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Fundamentos do Desenvolvimento Mobile</h4>
-                    <p>Desenvolvimento de aplicações mobile</p>
-                    <span class="curso-status concluido">Nota 10 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Linguagem de Programação Aplicada</h4>
-                    <p>Jogo 2D Gi-Force com PyGame</p>
-                    <span class="curso-status concluido">Nota 9.4 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Computação em Nuvem</h4>
-                    <p>Fundamentos de cloud computing e serviços</p>
-                    <span class="curso-status concluido">Nota 9.1 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>DevOps e Integração Contínua</h4>
-                    <p>CI/CD, Docker e automação de pipelines</p>
-                    <span class="curso-status concluido">Nota 8.8 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Estrutura de Dados</h4>
-                    <p>Algoritmos e estruturas de dados fundamentais</p>
-                    <span class="curso-status planejado">A cursar</span>
+                <div class="area-group">
+                  <p class="area-label dev">🌐 Desenvolvimento</p>
+                  <div class="disc-grid">
+                    <div class="disc-item">
+                      <h4>Fundamentos da Programação Web</h4>
+                      <p>HTML, CSS e JavaScript na prática</p>
+                      <span class="disc-badge concluido">Nota 8.8 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Fundamentos do Desenvolvimento Mobile</h4>
+                      <p>Desenvolvimento de aplicações mobile</p>
+                      <span class="disc-badge concluido">Nota 10 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Linguagem de Programação Aplicada</h4>
+                      <p>Jogo 2D Gi-Force com PyGame</p>
+                      <span class="disc-badge concluido">Nota 9.4 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Computação em Nuvem</h4>
+                      <p>Fundamentos de cloud computing e serviços</p>
+                      <span class="disc-badge concluido">Nota 9.1 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>DevOps e Integração Contínua</h4>
+                      <p>CI/CD, Docker e automação de pipelines</p>
+                      <span class="disc-badge concluido">Nota 8.8 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Estrutura de Dados</h4>
+                      <p>Algoritmos e estruturas de dados fundamentais</p>
+                      <span class="disc-badge planejado">A cursar</span>
+                    </div>
                   </div>
                 </div>
 
-                <!-- Grupo: Dados & Sistemas -->
-                <p style="color:#6a4c93; font-weight:700; margin: 0.5rem 0 1rem; font-size:0.95rem; letter-spacing:0.03em;">🗄️ Dados &amp; Sistemas</p>
-                <div class="cursos-grid" style="margin-bottom:2rem;">
-                  <div class="curso-item">
-                    <h4>Banco de Dados Relacional</h4>
-                    <p>Modelagem MER e consultas SQL</p>
-                    <span class="curso-status concluido">Nota 8.1 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Análise de Sistemas</h4>
-                    <p>Casos de uso, diagrama de classes e requisitos funcionais</p>
-                    <span class="curso-status concluido">Nota 9.7 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Engenharia de Software</h4>
-                    <p>Requisitos, histórias de usuário e gestão Kanban</p>
-                    <span class="curso-status concluido">Nota 7.8 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Fundamentos de Sistemas de Informação</h4>
-                    <p>Análise e modelagem de sistemas de informação</p>
-                    <span class="curso-status concluido">Nota 9.7 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Métodos Ágeis</h4>
-                    <p>Scrum, Kanban e gestão de projetos ágeis</p>
-                    <span class="curso-status em-andamento">Em curso</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Ativ. Extensionistas II — AgendaSUS</h4>
-                    <p>Aplicação web para gestão em UBS</p>
-                    <span class="curso-status em-andamento">Em curso</span>
-                  </div>
-                </div>
-
-                <!-- Grupo: Design & UX -->
-                <p style="color:#6a4c93; font-weight:700; margin: 0.5rem 0 1rem; font-size:0.95rem; letter-spacing:0.03em;">🎨 Design &amp; UX</p>
-                <div class="cursos-grid" style="margin-bottom:2rem;">
-                  <div class="curso-item">
-                    <h4>Fundamentos de Design de Sistemas</h4>
-                    <p>Prototipação de apps com Figma e Kodular</p>
-                    <span class="curso-status concluido">Nota 10 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Design de Interação</h4>
-                    <p>Protótipo de app de streaming no Figma</p>
-                    <span class="curso-status concluido">Nota 10 · 100%</span>
+                <div class="area-group">
+                  <p class="area-label dados">🗄️ Dados &amp; Sistemas</p>
+                  <div class="disc-grid">
+                    <div class="disc-item">
+                      <h4>Banco de Dados Relacional</h4>
+                      <p>Modelagem MER e consultas SQL</p>
+                      <span class="disc-badge concluido">Nota 8.1 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Análise de Sistemas</h4>
+                      <p>Casos de uso, diagrama de classes e requisitos funcionais</p>
+                      <span class="disc-badge concluido">Nota 9.7 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Engenharia de Software</h4>
+                      <p>Requisitos, histórias de usuário e gestão Kanban</p>
+                      <span class="disc-badge concluido">Nota 7.8 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Fundamentos de Sistemas de Informação</h4>
+                      <p>Análise e modelagem de sistemas de informação</p>
+                      <span class="disc-badge concluido">Nota 9.7 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Métodos Ágeis</h4>
+                      <p>Scrum, Kanban e gestão de projetos ágeis</p>
+                      <span class="disc-badge em-andamento">Em curso</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Ativ. Extensionistas II — AgendaSUS</h4>
+                      <p>Aplicação web para gestão em UBS</p>
+                      <span class="disc-badge em-andamento">Em curso</span>
+                    </div>
                   </div>
                 </div>
 
-                <!-- Grupo: Fundamentos -->
-                <p style="color:#6a4c93; font-weight:700; margin: 0.5rem 0 1rem; font-size:0.95rem; letter-spacing:0.03em;">🧠 Fundamentos</p>
-                <div class="cursos-grid">
-                  <div class="curso-item">
-                    <h4>Lógica de Programação e Algoritmos</h4>
-                    <p>Programação estruturada e resolução de problemas</p>
-                    <span class="curso-status concluido">Nota 9.2 · 100%</span>
+                <div class="area-group">
+                  <p class="area-label ux">🎨 Design &amp; UX</p>
+                  <div class="disc-grid">
+                    <div class="disc-item">
+                      <h4>Fundamentos de Design de Sistemas</h4>
+                      <p>Prototipação de apps com Figma e Kodular</p>
+                      <span class="disc-badge concluido">Nota 10 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Design de Interação</h4>
+                      <p>Prototipação de app de streaming no Figma</p>
+                      <span class="disc-badge concluido">Nota 9.4 · 100%</span>
+                    </div>
                   </div>
-                  <div class="curso-item">
-                    <h4>Programação Orientada a Objetos</h4>
-                    <p>Herança, encapsulamento e polimorfismo em Java</p>
-                    <span class="curso-status concluido">Nota 9.1 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Introdução à Inteligência Artificial</h4>
-                    <p>Fundamentos de IA e aprendizado de máquina</p>
-                    <span class="curso-status concluido">Nota 10 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Matemática Aplicada à Computação</h4>
-                    <p>Lógica matemática e fundamentos computacionais</p>
-                    <span class="curso-status concluido">Nota 7.3 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Organização de Computadores</h4>
-                    <p>Arquitetura e funcionamento de hardware</p>
-                    <span class="curso-status concluido">Nota 9.1 · 100%</span>
-                  </div>
-                  <div class="curso-item">
-                    <h4>Legislação, Ética e Conformidade</h4>
-                    <p>LGPD, ética profissional e responsabilidade digital</p>
-                    <span class="curso-status concluido">Nota 9.1 · 100%</span>
+                </div>
+
+                <div class="area-group">
+                  <p class="area-label fund">🔧 Fundamentos</p>
+                  <div class="disc-grid">
+                    <div class="disc-item">
+                      <h4>Lógica de Programação e Algoritmos</h4>
+                      <p>Programação estruturada e resolução de problemas</p>
+                      <span class="disc-badge concluido">Nota 9.2 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Programação Orientada a Objetos</h4>
+                      <p>Herança, encapsulamento e polimorfismo em Java</p>
+                      <span class="disc-badge concluido">Nota 9.1 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Introdução à Inteligência Artificial</h4>
+                      <p>Fundamentos de IA e aprendizado de máquina</p>
+                      <span class="disc-badge concluido">Nota 10 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Matemática Aplicada à Computação</h4>
+                      <p>Lógica matemática e fundamentos computacionais</p>
+                      <span class="disc-badge concluido">Nota 7.3 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Organização de Computadores</h4>
+                      <p>Arquitetura e funcionamento de hardware</p>
+                      <span class="disc-badge concluido">Nota 9.1 · 100%</span>
+                    </div>
+                    <div class="disc-item">
+                      <h4>Legislação, Ética e Conformidade</h4>
+                      <p>LGPD, ética profissional e responsabilidade digital</p>
+                      <span class="disc-badge concluido">Nota 9.1 · 100%</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Idiomas -->
-              <div class="educacao-box idiomas-box">
-                <h3 class="linha-title">🌍 Idiomas</h3>
+              <div class="idiomas-card">
+                <h3 class="card-title">🌍 Idiomas</h3>
                 <div class="idiomas-list">
                   <div class="idioma-item">
                     <div class="idioma-info">
                       <h4>Português</h4>
                       <span class="idioma-level">Nativo</span>
                     </div>
-                    <div class="idioma-progress">
-                      <div class="progress-bar" style="width: 100%"></div>
-                    </div>
+                    <div class="idioma-bar"><div class="idioma-fill" style="width:100%"></div></div>
                   </div>
-
                   <div class="idioma-item">
                     <div class="idioma-info">
                       <h4>Inglês</h4>
                       <span class="idioma-level">Intermediário</span>
                     </div>
-                    <div class="idioma-progress">
-                      <div class="progress-bar" style="width: 65%"></div>
-                    </div>
+                    <div class="idioma-bar"><div class="idioma-fill" style="width:65%"></div></div>
                   </div>
-
                   <div class="idioma-item">
                     <div class="idioma-info">
                       <h4>Espanhol</h4>
                       <span class="idioma-level">Intermediário</span>
                     </div>
-                    <div class="idioma-progress">
-                      <div class="progress-bar" style="width: 65%"></div>
-                    </div>
+                    <div class="idioma-bar"><div class="idioma-fill" style="width:65%"></div></div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      <!-- SEÇÃO 4: PORTFÓLIO -->
+      <!-- ===== SEÇÃO 4: PORTFÓLIO ===== -->
       <section id="portfolio" class="portfolio-section">
         <div class="container">
-          <h2 class="section-title">Meu Portfólio</h2>
-          <p class="section-subtitle">
-            Projetos desenvolvidos ao longo da graduação — de sistemas web a jogos 2D
-          </p>
+          <h2 class="section-title">Portfólio</h2>
+          <p class="section-subtitle">Projetos desenvolvidos ao longo da graduação — de sistemas web a jogos 2D</p>
 
-          <!-- PROJETOS DESTAQUE -->
-          <h3 style="color:white; font-size:1.2rem; margin-bottom:1.5rem; text-align:center; opacity:0.9;">⭐ Projetos em Destaque</h3>
-          <div class="portfolio-grid" style="margin-bottom: 3rem;">
-
-            <!-- DESTAQUE 1: AgendaSUS -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
-                <div class="projeto-placeholder">🏥</div>
-              </div>
-              <div class="portfolio-content">
-                <h3>AgendaSUS</h3>
-                <p>
-                  Aplicação web para gestão de pacientes e gestores nas Unidades
-                  Básicas de Saúde (UBS). Projeto das Atividades Extensionistas,
-                  com foco em impacto social real na saúde pública.
-                  Inclui planejamento, prototipação e documentação completa.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">Figma</span>
-                  <span class="tech-tag">UI/UX</span>
-                  <span class="tech-tag">Protótipo Web</span>
-                  <span class="tech-tag">Saúde Pública</span>
-                </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://www.figma.com/proto/6LMapLKj3Y67otSLBR8UEO/Aplicativo-SUS?node-id=8-4&t=w2nVRrdgKiebTudL-1"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver Protótipo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- DESTAQUE 2: Gi-Force -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
-                <div class="projeto-placeholder">🚀</div>
-              </div>
-              <div class="portfolio-content">
-                <h3>Gi-Force Game</h3>
-                <p>
-                  Jogo 2D de nave desenvolvido em Python com a biblioteca PyGame.
-                  Projeto da disciplina de Linguagem de Programação Aplicada,
-                  consolidando todos os aprendizados de programação do curso
-                  em um produto interativo e completo.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">PyGame</span>
-                  <span class="tech-tag">Game Dev</span>
-                  <span class="tech-tag">POO</span>
-                </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/gi-force-game"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver no GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- DESTAQUE 3: Portfólio -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                <div class="projeto-placeholder">🌐</div>
-              </div>
-              <div class="portfolio-content">
-                <h3>Portfólio Pessoal</h3>
-                <p>
-                  Este próprio site! Desenvolvido do zero com HTML, CSS e
-                  JavaScript puro. Inclui menu fixo com scroll suave, seções
-                  animadas, design responsivo e hospedagem via GitHub Pages.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">GitHub Pages</span>
-                </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/portifolio-pessoal"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver Código</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- OUTROS PROJETOS -->
-          <h3 style="color:white; font-size:1.2rem; margin-bottom:1.5rem; text-align:center; opacity:0.9;">📁 Outros Projetos</h3>
+          <p class="destaque-label featured">⭐ Projetos em Destaque</p>
           <div class="portfolio-grid">
 
-            <!-- Locadora de Veículos -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);">
-                <div class="projeto-placeholder">🚗</div>
-              </div>
-              <div class="portfolio-content">
-                <h3>Locadora de Veículos — BD</h3>
-                <p>
-                  A partir de um modelo lógico, foram criados scripts SQL para
-                  criação do banco, inserção de dados e consultas para extração
-                  de informações. Projeto da disciplina de Banco de Dados Relacional.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">SQL</span>
-                  <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">Banco de Dados</span>
+            <div class="proj-card">
+              <div class="proj-thumb thumb-sus"><span class="proj-emoji">🏥</span></div>
+              <div class="proj-body">
+                <h3>AgendaSUS</h3>
+                <p>Aplicação web para gestão de pacientes e gestores nas Unidades Básicas de Saúde. Projeto das Atividades Extensionistas com foco em impacto social real. Inclui planejamento, prototipação e documentação completa.</p>
+                <div class="proj-tags">
+                  <span class="tag">Figma</span><span class="tag">UI/UX</span><span class="tag">Protótipo Web</span><span class="tag">Saúde Pública</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/locadora-veiculos"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver no GitHub</a
-                  >
+                <div class="proj-links">
+                  <a href="https://www.figma.com/proto/6LMapLKj3Y67otSLBR8UEO/Aplicativo-SUS?node-id=8-4&t=w2nVRrdgKiebTudL-1" class="proj-link pink" target="_blank" rel="noopener noreferrer">Ver Protótipo ↗</a>
                 </div>
               </div>
             </div>
 
-            <!-- Rede de Hotéis -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #c94b4b 0%, #4b134f 100%);">
-                <div class="projeto-placeholder">🏨</div>
+            <div class="proj-card">
+              <div class="proj-thumb thumb-game"><span class="proj-emoji">🚀</span></div>
+              <div class="proj-body">
+                <h3>Gi-Force Game</h3>
+                <p>Jogo 2D de nave desenvolvido em Python com a biblioteca PyGame. Projeto da disciplina de Linguagem de Programação Aplicada, consolidando todos os aprendizados de programação do curso em um produto interativo e completo.</p>
+                <div class="proj-tags">
+                  <span class="tag">Python</span><span class="tag">PyGame</span><span class="tag">Game Dev</span><span class="tag">POO</span>
+                </div>
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/gi-force-game" class="proj-link" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+                </div>
               </div>
-              <div class="portfolio-content">
+            </div>
+
+            <div class="proj-card">
+              <div class="proj-thumb thumb-port"><span class="proj-emoji">🌐</span></div>
+              <div class="proj-body">
+                <h3>Portfólio Pessoal</h3>
+                <p>Este próprio site! Desenvolvido do zero com HTML, CSS e JavaScript puro. Inclui menu fixo com scroll suave, seções animadas, design responsivo e hospedagem via GitHub Pages.</p>
+                <div class="proj-tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span>
+                </div>
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/portifolio-pessoal" class="proj-link" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="destaque-label other">📁 Outros Projetos</p>
+          <div class="portfolio-grid outros">
+
+            <div class="proj-card">
+              <div class="proj-thumb thumb-car"><span class="proj-emoji">🚗</span></div>
+              <div class="proj-body">
+                <h3>Locadora de Veículos</h3>
+                <p>A partir de um modelo lógico, foram criados scripts SQL para criação do banco, inserção de dados e consultas para extração de informações. Projeto de Banco de Dados Relacional.</p>
+                <div class="proj-tags">
+                  <span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Banco de Dados</span>
+                </div>
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/locadora-veiculos" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-card">
+              <div class="proj-thumb thumb-hotel"><span class="proj-emoji">🏨</span></div>
+              <div class="proj-body">
                 <h3>Rede de Hotéis — Modelagem BD</h3>
-                <p>
-                  Modelagem Entidade-Relacionamento (MER) completa a partir das
-                  regras de negócio de uma rede de hotéis. Projeto da disciplina
-                  de Banco de Dados Relacional.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">MER</span>
-                  <span class="tech-tag">Modelagem</span>
-                  <span class="tech-tag">Banco de Dados</span>
+                <p>Modelagem Entidade-Relacionamento (MER) completa a partir das regras de negócio de uma rede de hotéis. Projeto de Banco de Dados Relacional.</p>
+                <div class="proj-tags">
+                  <span class="tag">MER</span><span class="tag">Modelagem</span><span class="tag">Banco de Dados</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/modelagem-rede-hoteis"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver no GitHub</a
-                  >
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/modelagem-rede-hoteis" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema de Estoque -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);">
-                <div class="projeto-placeholder">📦</div>
-              </div>
-              <div class="portfolio-content">
+            <div class="proj-card">
+              <div class="proj-thumb thumb-estoque"><span class="proj-emoji">📦</span></div>
+              <div class="proj-body">
                 <h3>Controle de Estoque</h3>
-                <p>
-                  Sistema em Python com Requisitos Funcionais e Não Funcionais
-                  extraídos de histórias de usuário e acompanhamento via quadro
-                  Kanban. Projeto da disciplina de Engenharia de Software.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Engenharia de Software</span>
-                  <span class="tech-tag">Kanban</span>
+                <p>Sistema em Python com Requisitos Funcionais e Não Funcionais extraídos de histórias de usuário e acompanhamento via quadro Kanban. Projeto de Engenharia de Software.</p>
+                <div class="proj-tags">
+                  <span class="tag">Python</span><span class="tag">Engenharia de Software</span><span class="tag">Kanban</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/controle-de-estoque-py"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver no GitHub</a
-                  >
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/controle-de-estoque-py" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 </div>
               </div>
             </div>
 
-            <!-- Programas Python -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #4776e6 0%, #8e54e9 100%);">
-                <div class="projeto-placeholder">🐍</div>
-              </div>
-              <div class="portfolio-content">
+            <div class="proj-card">
+              <div class="proj-thumb thumb-python"><span class="proj-emoji">🐍</span></div>
+              <div class="proj-body">
                 <h3>Desafios Python em Console</h3>
-                <p>
-                  Quatro sistemas console desenvolvidos na disciplina de Lógica
-                  de Programação: Planos de Saúde, Pizzaria, Madereira e
-                  Contatos Comerciais. Cada um aplica estruturas de dados,
-                  funções e lógica condicional.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Lógica</span>
-                  <span class="tech-tag">Algoritmos</span>
+                <p>Quatro sistemas console em Lógica de Programação: Planos de Saúde, Pizzaria, Madereira e Contatos Comerciais. Cada um aplica lógica condicional e estruturas de dados.</p>
+                <div class="proj-tags">
+                  <span class="tag">Python</span><span class="tag">Lógica</span><span class="tag">Algoritmos</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/desafios-python"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver no GitHub</a
-                  >
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/desafios-python" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 </div>
               </div>
             </div>
 
-            <!-- Cofrinho Java -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #e96c3a 0%, #f7c948 100%);">
-                <div class="projeto-placeholder">🪙</div>
-              </div>
-              <div class="portfolio-content">
+            <div class="proj-card">
+              <div class="proj-thumb thumb-java"><span class="proj-emoji">💰</span></div>
+              <div class="proj-body">
                 <h3>Cofrinho — POO em Java</h3>
-                <p>
-                  Programa desenvolvido em Java para a disciplina de Programação
-                  Orientada a Objetos. Aplica herança, encapsulamento e
-                  polimorfismo no contexto de um sistema de cofre de moedas.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">Java</span>
-                  <span class="tech-tag">POO</span>
-                  <span class="tech-tag">Herança</span>
+                <p>Programa em Java para Programação Orientada a Objetos. Aplica herança, encapsulamento e polimorfismo no contexto de um sistema de cofre de moedas.</p>
+                <div class="proj-tags">
+                  <span class="tag">Java</span><span class="tag">POO</span><span class="tag">Herança</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/cofrinho-moedas"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver no GitHub</a
-                  >
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/cofrinho-moedas" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 </div>
               </div>
             </div>
 
-            <!-- Protótipo Streaming -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #e50914 0%, #831010 100%);">
-                <div class="projeto-placeholder">🎬</div>
-              </div>
-              <div class="portfolio-content">
+            <div class="proj-card">
+              <div class="proj-thumb thumb-stream"><span class="proj-emoji">🎬</span></div>
+              <div class="proj-body">
                 <h3>Protótipo App Streaming</h3>
-                <p>
-                  Prototipação de telas de um aplicativo de streaming no Figma,
-                  desenvolvido na disciplina de Design de Interação. Foco em
-                  hierarquia visual, navegação intuitiva e experiência do usuário.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">Figma</span>
-                  <span class="tech-tag">UI/UX</span>
-                  <span class="tech-tag">Design de Interação</span>
+                <p>Prototipação de telas de um aplicativo de streaming no Figma, na disciplina de Design de Interação. Foco em hierarquia visual, navegação intuitiva e experiência do usuário.</p>
+                <div class="proj-tags">
+                  <span class="tag">Figma</span><span class="tag">UI/UX</span><span class="tag">Design de Interação</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/prototipo-streaming-figma"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver no GitHub</a
-                  >
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/prototipo-streaming-figma" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 </div>
               </div>
             </div>
 
-            <!-- Apps Kodular / Figma -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);">
-                <div class="projeto-placeholder">📱</div>
-              </div>
-              <div class="portfolio-content">
+            <div class="proj-card">
+              <div class="proj-thumb thumb-app"><span class="proj-emoji">📱</span></div>
+              <div class="proj-body">
                 <h3>Apps Mobile — Kodular &amp; Figma</h3>
-                <p>
-                  Três aplicativos desenvolvidos na disciplina de Fundamentos
-                  de Design de Sistemas: Calculadora Simples, Cadastro de Livros
-                  e Pizzaria. Prototipados no Figma e implementados com Kodular.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">Figma</span>
-                  <span class="tech-tag">Kodular</span>
-                  <span class="tech-tag">Mobile</span>
-                  <span class="tech-tag">UI/UX</span>
+                <p>Três aplicativos em Fundamentos de Design de Sistemas: Calculadora Simples, Cadastro de Livros e Pizzaria. Prototipados no Figma e implementados com Kodular.</p>
+                <div class="proj-tags">
+                  <span class="tag">Figma</span><span class="tag">Kodular</span><span class="tag">Mobile</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/app-calculadora-simples"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Calculadora</a
-                  >
-                  <a
-                    href="https://github.com/GisellePegado/app-cadastro-livros"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Livros</a
-                  >
-                  <a
-                    href="https://github.com/GisellePegado/app-pizzaria"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Pizzaria</a
-                  >
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/app-calculadora-simples" class="proj-link" target="_blank" rel="noopener noreferrer">Calc ↗</a>
+                  <a href="https://github.com/GisellePegado/app-cadastro-livros" class="proj-link" target="_blank" rel="noopener noreferrer">Livros ↗</a>
+                  <a href="https://github.com/GisellePegado/app-pizzaria" class="proj-link" target="_blank" rel="noopener noreferrer">Pizzaria ↗</a>
                 </div>
               </div>
             </div>
 
-            <!-- Análise de Sistemas -->
-            <div class="portfolio-item">
-              <div class="portfolio-image" style="background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);">
-                <div class="projeto-placeholder">📊</div>
-              </div>
-              <div class="portfolio-content">
+            <div class="proj-card">
+              <div class="proj-thumb thumb-analise"><span class="proj-emoji">📊</span></div>
+              <div class="proj-body">
                 <h3>BergaWorks — Análise de Sistemas</h3>
-                <p>
-                  Artefatos completos de análise para automação empresarial:
-                  diagrama de casos de uso, diagrama de classes UML e
-                  levantamento de Requisitos Funcionais.
-                </p>
-                <div class="portfolio-tech">
-                  <span class="tech-tag">UML</span>
-                  <span class="tech-tag">Casos de Uso</span>
-                  <span class="tech-tag">Requisitos</span>
+                <p>Artefatos completos para automação empresarial: diagrama de casos de uso, diagrama de classes UML e levantamento de Requisitos Funcionais.</p>
+                <div class="proj-tags">
+                  <span class="tag">UML</span><span class="tag">Casos de Uso</span><span class="tag">Requisitos</span>
                 </div>
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/GisellePegado/bergaworks-automacao-empresarial"
-                    class="portfolio-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Ver GitHub</a
-                  >
+                <div class="proj-links">
+                  <a href="https://github.com/GisellePegado/bergaworks-automacao-empresarial" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 </div>
               </div>
             </div>
@@ -808,150 +598,128 @@
         </div>
       </section>
 
-      <!-- SEÇÃO 5: CONTATO -->
-      <section id="contato" class="contact-section">
+      <!-- ===== SEÇÃO 5: CONTATO ===== -->
+      <section id="contato">
         <div class="container">
-          <h2 class="section-title">Entre em Contato</h2>
-          <p class="section-subtitle">
-            Vamos conversar sobre tecnologia, projetos ou oportunidades!
-          </p>
+          <h2 class="section-title">Contato</h2>
+          <p class="section-subtitle">Vamos conversar sobre tecnologia, projetos ou oportunidades!</p>
 
-          <div class="contato-box">
-            <div class="contato-form-container">
-              <form
-                action="mailto:gisellepegadof@gmail.com"
-                method="POST"
-                enctype="text/plain"
-                class="contato-form"
-              >
+          <div class="contato-grid">
+            <div class="form-card">
+              <h3 class="card-title">Enviar mensagem</h3>
+              <form action="https://formspree.io/f/mykldwjd" method="POST" class="contato-form">
                 <div class="form-group">
                   <label for="nome">Nome</label>
-                  <input type="text" id="nome" name="nome" required />
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
                 </div>
-
                 <div class="form-group">
                   <label for="email">E-mail</label>
-                  <input type="email" id="email" name="email" required />
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required />
                 </div>
-
                 <div class="form-group">
                   <label for="mensagem">Mensagem</label>
-                  <textarea
-                    id="mensagem"
-                    name="mensagem"
-                    rows="6"
-                    required
-                  ></textarea>
+                  <textarea id="mensagem" name="mensagem" rows="5" placeholder="Olá, Giselle! Gostaria de..." required></textarea>
                 </div>
-
-                <button type="submit" class="submit-button">
-                  Enviar Mensagem
-                </button>
+                <button type="submit" class="submit-btn">Enviar mensagem →</button>
               </form>
             </div>
 
             <div class="contato-info">
-              <h3>Outras formas de Contato</h3>
-
-              <a
-                href="mailto:gisellepegadof@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contato-link"
-              >
+              <h3>Outras formas de contato</h3>
+              <a href="mailto:gisellepegadof@gmail.com" class="contato-link-wrap" target="_blank" rel="noopener noreferrer">
                 <div class="contato-item">
                   <div class="contato-icon">📧</div>
-                  <div>
-                    <h4>E-mail</h4>
-                    <p>gisellepegadof@gmail.com</p>
-                  </div>
+                  <div><h4>E-mail</h4><p>gisellepegadof@gmail.com</p></div>
                 </div>
               </a>
-
-              <a
-                href="https://github.com/GisellePegado"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contato-link"
-              >
+              <a href="https://github.com/GisellePegado" class="contato-link-wrap" target="_blank" rel="noopener noreferrer">
                 <div class="contato-item">
                   <div class="contato-icon">🐙</div>
-                  <div>
-                    <h4>GitHub</h4>
-                    <p>GisellePegado</p>
-                  </div>
+                  <div><h4>GitHub</h4><p>github.com/GisellePegado</p></div>
                 </div>
               </a>
-
-              <a
-                href="https://www.linkedin.com/in/giselle-pegado"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contato-link"
-              >
+              <a href="https://www.linkedin.com/in/giselle-pegado" class="contato-link-wrap" target="_blank" rel="noopener noreferrer">
                 <div class="contato-item">
                   <div class="contato-icon">💼</div>
-                  <div>
-                    <h4>LinkedIn</h4>
-                    <p>giselle-pegado</p>
-                  </div>
+                  <div><h4>LinkedIn</h4><p>linkedin.com/in/giselle-pegado</p></div>
                 </div>
               </a>
             </div>
           </div>
         </div>
       </section>
+
     </main>
 
-    <!-- Rodapé -->
     <footer>
       <p>&copy; 2025 Giselle Pegado. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- JavaScript para navegação ativa -->
     <script>
+      /* ── Active nav link ── */
       function updateActiveMenuLink() {
-        const sections = document.querySelectorAll("section[id]");
-        const navLinks = document.querySelectorAll(".menu-link");
-
-        let currentSection = "";
-
-        sections.forEach((section) => {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.menu-link');
+        let current = '';
+        sections.forEach(section => {
           const rect = section.getBoundingClientRect();
-          if (rect.top <= 150 && rect.bottom >= 150) {
-            currentSection = section.getAttribute("id");
-          }
+          if (rect.top <= 120 && rect.bottom >= 120) current = section.id;
         });
-
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-        });
-
-        if (currentSection) {
-          const activeLink = document.querySelector(
-            `a[href="#${currentSection}"]`
-          );
-          if (activeLink) {
-            activeLink.classList.add("active");
-          }
+        navLinks.forEach(link => link.classList.remove('active'));
+        if (current) {
+          const active = document.querySelector(`a[href="#${current}"]`);
+          if (active) active.classList.add('active');
         }
       }
+      window.addEventListener('scroll', updateActiveMenuLink);
+      window.addEventListener('load', updateActiveMenuLink);
 
-      window.addEventListener("scroll", updateActiveMenuLink);
-      window.addEventListener("load", updateActiveMenuLink);
-
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
+      /* ── Smooth scroll ── */
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
           e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       });
+
+      /* ── Hamburger menu ── */
+      const hamburgerBtn  = document.querySelector('.nav-hamburger');
+      const mobileMenu    = document.querySelector('.mobile-menu');
+      const mobileLinks   = document.querySelectorAll('.mobile-menu-link');
+
+      function toggleMenu(open) {
+        const isOpen = open !== undefined ? open : mobileMenu.classList.toggle('open');
+        mobileMenu.classList.toggle('open', isOpen);
+        mobileMenu.setAttribute('aria-hidden', !isOpen);
+        hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        hamburgerBtn.classList.toggle('active', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      }
+
+      hamburgerBtn.addEventListener('click', () => toggleMenu());
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => toggleMenu(false));
+      });
+
+      // Fecha ao clicar fora do menu
+      document.addEventListener('click', (e) => {
+        if (mobileMenu.classList.contains('open') &&
+            !mobileMenu.contains(e.target) &&
+            !hamburgerBtn.contains(e.target)) {
+          toggleMenu(false);
+        }
+      });
+
+      // Fecha ao pressionar Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+          toggleMenu(false);
+          hamburgerBtn.focus();
+        }
+      });
     </script>
+
   </body>
 </html>
