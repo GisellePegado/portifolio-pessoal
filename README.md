@@ -39,18 +39,18 @@ Consulte a pasta [`concepts/`](concepts/) para os conceitos técnicos explorados
 
 Este projeto documenta os seguintes conceitos na pasta [`concepts/`](concepts/):
 
-| Conceito                                                                | Descrição resumida                                |
-| ----------------------------------------------------------------------- | ------------------------------------------------- |
-| [Propriedades Customizadas CSS](concepts/css-custom-properties.md)      | Sistema de design tokens com `:root` e `var()`    |
-| [Animações CSS](concepts/css-animations.md)                             | `@keyframes` e aurora orbs com delays escalonados |
-| [Design Responsivo](concepts/responsive-design.md)                      | Media queries e menu mobile adaptativo            |
-| [Tipografia Fluida](concepts/fluid-typography.md)                       | `clamp()` para fontes que crescem com o viewport  |
-| [HTML Semântico](concepts/semantic-html.md)                             | `<header>`, `<main>`, `<section>`, `<footer>`     |
-| [Acessibilidade Web](concepts/web-accessibility.md)                     | ARIA, teclado e `prefers-reduced-motion`          |
-| [Aplicação de Página Única](concepts/single-page-application.md)        | Navegação por hash sem recarregar a página        |
-| [Programação Orientada a Eventos](concepts/event-driven-programming.md) | `addEventListener` para scroll, click e teclado   |
-| [GitHub Pages](concepts/github-pages.md)                                | Hospedagem estática gratuita via GitHub           |
-| [Formulário com Serviço Externo](concepts/third-party-form.md)          | Envio de contato via Formspree sem backend        |
+| Conceito                                                                    | Descrição resumida                                |
+| --------------------------------------------------------------------------- | ------------------------------------------------- |
+| 🎨 [Propriedades Customizadas CSS](concepts/css-custom-properties.md)      | Sistema de design tokens com `:root` e `var()`    |
+| ✨ [Animações CSS](concepts/css-animations.md)                             | `@keyframes` e aurora orbs com delays escalonados |
+| 📱 [Design Responsivo](concepts/responsive-design.md)                       | Media queries e menu mobile adaptativo            |
+| ✒️ [Tipografia Fluida](concepts/fluid-typography.md)                       | `clamp()` para fontes que crescem com o viewport  |
+| 🏗️ [HTML Semântico](concepts/semantic-html.md)                             | `<header>`, `<main>`, `<section>`, `<footer>`     |
+| ♿ [Acessibilidade Web](concepts/web-accessibility.md)                     | ARIA, teclado e `prefers-reduced-motion`          |
+| 📄 [Aplicação de Página Única](concepts/single-page-application.md)        | Navegação por hash sem recarregar a página        |
+| ⚡ [Programação Orientada a Eventos](concepts/event-driven-programming.md) | `addEventListener` para scroll, click e teclado   |
+| 🚀 [GitHub Pages](concepts/github-pages.md)                                | Hospedagem estática gratuita via GitHub           |
+| 📬 [Formulário com Serviço Externo](concepts/third-party-form.md)          | Envio de contato via Formspree sem backend        |
 
 > Os arquivos contêm explicações detalhadas e exemplos extraídos do projeto.
 
