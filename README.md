@@ -4,7 +4,7 @@ Site de portfólio desenvolvido com HTML, CSS e JavaScript para apresentar proje
 
 Hospedado via GitHub Pages: **https://gisellepegado.github.io/portifolio-pessoal/**
 
-> Disciplina: Ferramentas de Desenvolvimento Web — UNINTER
+> Disciplina: Ferramentas de Desenvolvimento Web — UNINTER · 2025
 
 ---
 
@@ -58,4 +58,4 @@ Este projeto documenta os seguintes conceitos na pasta [`concepts/`](concepts/):
 
 ## 👩‍💻 Autora
 
-- **Giselle Pegado** · ADS — UNINTER · 2025
+- **Giselle Pegado** · ADS — UNINTER
