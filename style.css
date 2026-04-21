@@ -1073,6 +1073,16 @@ section.compact {
   color: var(--text-muted);
 }
 
+.category-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 2rem 0 0.75rem;
+  padding-left: 2px;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1081,7 +1091,7 @@ section.compact {
 }
 
 .portfolio-grid.outros {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .proj-card {
@@ -1137,10 +1147,10 @@ section.compact {
   background: linear-gradient(135deg, #1a4731, #15803d);
 }
 .thumb-java {
-  background: linear-gradient(135deg, #3b2904, #854d0e);
+  background: linear-gradient(135deg, #3b0438, #850e7f);
 }
 .thumb-stream {
-  background: linear-gradient(135deg, #1b0f0f, #dc2626);
+  background: linear-gradient(135deg, #0f0f0f, #dc2626);
 }
 .thumb-app {
   background: linear-gradient(135deg, #0c4a6e, #075985);
