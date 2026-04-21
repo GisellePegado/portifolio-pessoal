@@ -1,4 +1,4 @@
-# 📐 Tipografia Fluida (Fluid Typography)
+# ✒️ Tipografia Fluida (Fluid Typography)
 
 ## 💡 O que é
 
