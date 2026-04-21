@@ -1,4 +1,4 @@
-# 🚀 GitHub Pages (GitHub Pages)
+# 🚀 Páginas GitHub (GitHub Pages)
 
 ## 💡 O que é
 
